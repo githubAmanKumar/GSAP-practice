@@ -1,0 +1,144 @@
+@font-face {
+    font-family: head;
+    src: url(./Heading-Now-Variable.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+*::selection {
+    color: black;
+    background: white;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+#loader {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, grey, gainsboro, grey);
+    position: fixed;
+    z-index: 99;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 999;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+}
+
+#page1 h1 {
+    font-size: 36vw;
+    text-transform: uppercase;
+    font-family: head;
+    white-space: nowrap;
+    font-stretch: 260%;
+    font-weight: 999;
+}
+
+#page2 {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+#page3 {
+    height: 100vh;
+    width: 100%;
+}
+
+#page3 .lines {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+#page3 .lines h1 {
+    border: 1px solid white;
+    color: white;
+    background: black;
+    font-size: 6vw;
+    font-style: italic;
+    letter-spacing: -0.2vw;
+    overflow: hidden;
+    height: 20vh;
+}
+
+#page4 {
+    height: 120vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-bottom: 1px solid white;
+    
+}
+#page4 #box{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 10vh;
+    
+}
+#page4 #box img{
+    height: 100vh;
+    object-fit: cover;
+    margin: 0;
+    /* display: none; */
+    transition: all ease 1s;
+}
+#page4 #box h1{
+    text-transform: uppercase;
+}
+
+#page5 {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+#page5 .bubbles{
+    height: 2vw;
+    width: 2vw;
+    background-color: red;
+    border-radius: 50%;
+}
+#page6 {
+    height: 100vh;
+    width: 100%;
+    background-color: cornflowerblue;
+    position: relative;
+}
+#page6 > #model{
+    position: absolute;
+    width: 80%;
+    z-index: 999999999999999999;
+}
