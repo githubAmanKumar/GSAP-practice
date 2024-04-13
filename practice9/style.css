@@ -1,0 +1,231 @@
+@font-face {
+    font-family: head;
+    src: url(./Heading-Now-Variable.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+*::selection {
+    color: black;
+    background: white;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    color: #fefefe;
+}
+
+#loader {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg,#fefefe , rgb(198, 198, 198));
+    position: fixed;
+    z-index: 99;
+    color: #1D1D1D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 999;
+}
+
+/* ==================================Homepage================================== */
+#homepage {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg,#fefefe,#515151,#1D1D1D);
+    overflow: hidden;
+}
+
+#homepage h1 {
+    font-size: 36vw;
+    text-transform: uppercase;
+    font-family: head;
+    white-space: nowrap;
+    font-stretch: 260%;
+    font-weight: 999;
+    -webkit-text-stroke: 2px #1D1D1D;
+}
+
+#homepage h1 img {
+    height: 27vw;
+    margin: 0 50px;
+    border: 10px solid #fefefe;
+    padding: 10px;
+}
+
+/* =================================Projects============================== */
+#projects {
+    width: 100%;
+    padding: 50px;
+    background: linear-gradient(180deg,#1D1D1D,#515151,#1D1D1D);
+
+}
+
+#projects h3 {
+    font-size: 10vw;
+    font-weight: normal;
+    letter-spacing: -3px;
+    color: #1D1D1D;
+    width: 40vw;
+    -webkit-text-stroke: 2px #fefefe;
+
+}
+
+.projects {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.projectInfo {
+    width: 40%;
+
+    p {
+        font-size: 25px;
+        font-family: sans-serif;
+    }
+}
+
+.card {
+    width: 50%;
+
+    img {
+        width: 100%;
+        height: 90%;
+        border: 10px solid #fefefe;
+        padding: 10px;
+    }
+
+    a {
+        text-align: center;
+        background-color: #fefefe;
+        color: #1D1D1D;
+        padding: 0 8px;
+        /* border-radius: 10px; */
+        text-decoration: none;
+    }
+}
+
+/* ==============================Skills============================== */
+
+#skills {
+    height: 170vh;
+    width: 100%;
+    background-color: #1D1D1D;
+    color: #fefefe;
+}
+
+#skills h3 {
+    font-size: 10vw;
+    font-weight: normal;
+    letter-spacing: -3px;
+    color: #1D1D1D;
+    width: 27vw;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    -webkit-text-stroke: 2px #fefefe;
+
+}
+
+#skills .lines {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+#skills .lines h1 {
+    border: 1px solid #fefefe;
+    color: #fefefe;
+    background: #1D1D1D;
+    font-size: 6vw;
+    font-style: italic;
+    letter-spacing: -0.2vw;
+    overflow: hidden;
+    height: 20vh;
+}
+
+#skills .lines h1:hover {
+    color: #1D1D1D;
+    background: #fefefe;
+    transition: all ease 0.6s;
+    cursor: context-menu;
+}
+
+/* ==============================About============================== */
+
+#about {
+    width: 100vw;
+    height: 80vh;
+    background: linear-gradient(180deg,#1D1D1D,#515151);
+    color: #fefefe;
+    display: flex;
+    align-items: center;
+
+    p {
+        font-size: 20px;
+        width: 40vw;
+        text-align: center;
+    }
+}
+
+#about div {
+    display: flex;
+
+    h6 {
+        width: 50%;
+        background: #fefefe;
+        color: #1D1D1D;
+        font-size: 100px;
+        letter-spacing: -8px;
+        width: 35vw;
+        height: 20vh;
+        margin-left: 50px;
+
+    };
+
+    img {
+        height: 50vh;
+        position: relative;
+        top: -20vh;
+        left: -5vw;
+    }
+}
+
+/* ==============================Contact============================== */
+
+
+#contact {
+    width: 100vw;
+    background: #1D1D1D;
+    color: #fefefe;
+    position: relative;
+
+}
+
+#contact div {
+    position: absolute;
+    top: -100px;
+    left: 100px;
+
+    a {
+        background: #fefefe;
+        color: #1D1D1D;
+        padding: 0 10px;
+        font-size: 20px;
+        text-decoration: none;
+    }
+}
