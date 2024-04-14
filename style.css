@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: teal;
+}
+#main{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+h1{
+    text-align: center;
+    margin-top: 50px;
+    color: #45CBCB;
+}
+nav{
+    width: 100vw;
+    display: flex;align-items: center;justify-content: space-evenly;
+    margin-top: 10px;
+}
+button{
+    padding: 1vw;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+#box{
+    width: full;
+    height: 25vw;
+    background-color: pink;
+    text-align: center;
+    margin-top: 50px;
+}
+#box video{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(156, 8, 32);
+}
+
+@media screen and (max-width: 800px) {
+    #box{
+        height: 55vw;
+    }
+    #box video{
+        width: 95%;
+    }
+  }
